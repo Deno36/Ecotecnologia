@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/script.js"></script>
+  <title>Cálculo de Paneles Solares</title>
+</head>
+<body>
+  <header>
+
+    <div class="header-content">
+
+        <div class="logo">
+            <h1>ODS<b>7</b></h1>
+        </div>
+
+        <div class="menu" id="show-menu">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html"> <i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="blog.html"> <i class="fab fa-youtube"> </i>Blog</a></li>
+                    <li class="menu-selected"><a href="#" class="text-menu-selected"> 
+                      <i class="fas fa-file-alt"></i>Calcular</a></li>
+                      <li><a href="https://es.enfsolar.com/directory/installer/Mexico"> <i class="fas fa-headset"></i>Instalacion</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+
+    <div id="icon-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+
+  </header>
+<div class="container-all" id="move-content">
+  <div class="container-solar">
+  <h1>Calculadora de Paneles Solares</h1><p></p>
+    <h3>Se recomienda el uso de paneles solares mayores a 350 vatios para reducir el espacio requerido por el sistema solar.</h3>
+  <form id="solarForm">
+    <label for="consumo">Consumo Energético Mensual (kWh):</label>
+    <input type="number" id="consumo" required step="any" min="0" placeholder="Ingrese el consumo mensual">
+
+    <label for="horasPico">Horas Pico de Sol Diarias: Consultelas en <a href="index.html">INICIO</a></label>
+    <input type="number" id="horasPico" required step="any" min="0" placeholder="Ingrese las horas pico diarias">
+
+    <label for="potencia">Potencia del Panel Solar (kW):</label>
+    <input type="number" id="potencia" required step="any" min="0" placeholder="Ingrese la potencia del panel.">
+    <p> 250 vatios/1000 = 0.25Kw</p>
+
+
+    <button type="button" onclick="calcularPaneles()">Calcular</button>
+  </form>
+  <div class="result" id="resultado"></div>
+  </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
